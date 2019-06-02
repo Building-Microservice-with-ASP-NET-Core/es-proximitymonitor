@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
+using System;
 using System.Linq;
 using Microsoft.Extensions.Logging;
 
@@ -19,7 +20,7 @@ namespace StatlerWaldorfCorp.ProximityMonitor.Queues
             this.Password = amqpOptions.Password;
             this.VirtualHost = amqpOptions.VirtualHost;
             this.HostName = amqpOptions.HostName;
-            this.Uri = amqpOptions.Uri;
+            this.Uri = new Uri(amqpOptions.Uri);
 
             logger.LogInformation($"AMQP Connection configured for URI : {amqpOptions.Uri}");
         }

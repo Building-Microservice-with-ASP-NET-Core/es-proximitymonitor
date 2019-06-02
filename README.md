@@ -1,4 +1,4 @@
 # Proximity Monitor
-The proximity monitor application is listening for **ProximityDetected** events. This is just to illustrate how to create a monitor for an event stream emitted by your event processor. As you'll read in the book, you can have multiple event processors, multiple outbound streams, and multiple monitors. How you design it depends largely on your expected volume and the domain of your application.
 
+接近监控器应用会侦听 **ProximityDetected** 事件。本项目用于演示如何基于由事件处理器生成的事件流创建监控器。正如书中的讲述，我们可以创建多个事件处理器、多个外接事件流、多个监视器。我们可以根据预期的数据量和应用的业务领域来自行设计。
 
